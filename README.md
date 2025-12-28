@@ -1,16 +1,15 @@
-````md
-# 🐧 My Arch Linux + Omarchy Installation Journey
+# My Arch Linux + Omarchy Installation Journey 🐧
 
-This repository documents my **personal journey and notes** installing **Arch Linux with Omarchy**, mainly for learning and future reference.
+This repository documents my **personal journey and notes** on installing **Arch Linux with Omarchy**, mainly for learning and future reference.
 
-> 💡 **Notes**
+> **Notes** 💡 
 > - Windows is installed on a **separate SSD**
 > - Arch + Omarchy is installed on an **HDD**
 > - I use **Ventoy** for everything here
 
 ---
 
-## 🧰 Tools Used
+## Tools Used 🧰 
 
 - **Ventoy** – boot multiple ISOs
 - **GParted Live** – partitioning
@@ -21,7 +20,7 @@ This repository documents my **personal journey and notes** installing **Arch Li
 
 ---
 
-## 🧱 Disk Preparation (GParted)
+## Disk Preparation (GParted) 🧱 
 
 1. Boot into **GParted Live**
 2. Create a **new 200GB partition** on my HDD  
@@ -29,7 +28,7 @@ This repository documents my **personal journey and notes** installing **Arch Li
 
 ---
 
-## 🌐 Boot Arch Linux & Connect to Wi-Fi
+## Boot Arch Linux & Connect to Wi-Fi 🌐 
 
 After booting into the Arch ISO:
 
@@ -69,7 +68,7 @@ ping -c 3 google.com
 
 ---
 
-## 💽 Disk Partitioning (cfdisk)
+## Disk Partitioning (cfdisk) 💽 
 
 List disks:
 
@@ -144,7 +143,7 @@ lsblk
 
 ---
 
-## 📂 Mounting Partitions
+## Mounting Partitions 📂 
 
 Mount root:
 
@@ -177,7 +176,7 @@ Expected:
 
 ---
 
-## 🚀 Installing Arch Linux (archinstall)
+## Installing Arch Linux (archinstall) 🚀 
 
 Start installer:
 
@@ -230,11 +229,11 @@ Everything else left at default.
 
 Start installation → **Yes**
 
-☕ Wait for the magic.
+Wait for the magic. ☕ 
 
 ---
 
-## 🔧 Post-Install (chroot)
+## Post-Install (chroot) 🔧 
 
 After install completes, choose:
 
@@ -293,7 +292,7 @@ reboot now
 
 ---
 
-## 🧑‍💻 First Boot into Arch
+## First Boot into Arch 🧑‍💻 
 
 In Limine menu:
 
@@ -311,7 +310,7 @@ setfont ter-132n
 
 ---
 
-## 🎨 Installing Omarchy
+## Installing Omarchy 🎨 
 
 Run:
 
@@ -329,7 +328,7 @@ Reboot Now
 
 ---
 
-## 🪟 Adding Windows to Limine
+## Adding Windows to Limine 🪟 
 
 Login, then become root:
 
@@ -348,7 +347,7 @@ Select your **Windows Boot Manager**
 
 ---
 
-## 🧠 Limine Configuration Cleanup
+## Limine Configuration Cleanup 🧠 
 
 Navigate:
 
@@ -389,7 +388,7 @@ mv limine.conf limine.conf.bak
 
 ---
 
-## 📝 Editing limine.conf
+## Editing limine.conf 📝 
 
 Go to `/boot`:
 
@@ -418,7 +417,7 @@ Save and exit.
 
 ---
 
-## 🔁 Final Reboot
+## Final Reboot 🔁 
 
 ```bash
 reboot
@@ -436,7 +435,3 @@ If everything works…
 * Omarchy runs on **HDD**
 * Limine handles dual-boot
 * This repo exists purely for **learning & reference**
-
----
-
-✨ Thanks future-me for reading this.
